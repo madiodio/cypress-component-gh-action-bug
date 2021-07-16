@@ -1,7 +1,5 @@
 {
   "integrationFolder": "cypress/tests",
-  "supportFile": false,
-  "fixturesFolder": false,
   "video": false,
   "component": {
     "componentFolder": "src",
