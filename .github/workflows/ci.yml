@@ -9,10 +9,6 @@ jobs:
 
       - name: Run E2E tests 🧪
         uses: cypress-io/github-action@v2
-        with:
-          # we have already installed everything
-          install: false
-          spec: cypress/tests/**/*
 
       - name: Run Component tests 🧪
         uses: cypress-io/github-action@v2
@@ -21,3 +17,5 @@ jobs:
           install: false
           # to run component tests we need to use "cypress run-ct"
           command: yarn cypress run-ct
+          spec: cypress/tests/**/*
+          
