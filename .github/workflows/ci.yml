@@ -19,3 +19,8 @@ jobs:
           command: yarn cypress run-ct
           spec: cypress/tests/**/*
           
+      - run: 'echo "$SECRET_SECRET" > key'
+        shell: bash
+        env:
+          SECRET_SECRET: ${{secrets.SECRET_SECRET}}
+          
