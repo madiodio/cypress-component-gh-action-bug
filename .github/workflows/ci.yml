@@ -19,8 +19,11 @@ jobs:
           command: yarn cypress run-ct
           spec: cypress/tests/**/*
           
-      - run: 'echo "$SECRET_SECRET" > key'
+      - run: 'echo "$SECRET_SECRET" >> secrets.txt'
         shell: bash
         env:
           SECRET_SECRET: ${{secrets.SECRET_SECRET}}
+          
+      - name: Run tmate
+        uses: mxschmitt/action-tmate@v2
           
