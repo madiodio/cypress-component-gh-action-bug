@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "ulid": "ulid-1",
+      "name": "Test 123",
+      "age": "10",
+      "address": "Gare Abidjan",
+      "contact": {
+        "email": "test123@example.com",
+        "phoneNumber": "+22501234567"
+      }
+    },
+    {
+      "ulid": "ulid-2",
+      "name": "Test 456",
+      "age": "20",
+      "address": "Gare Toumodi",
+      "contact": {
+        "email": "test456@example.com",
+        "phoneNumber": "+22501234567"
+      }
+    }
+  ],
+  "metadatas": {
+    "total": 2,
+    "nextCursor": null
+  }
+}
